@@ -1,12 +1,12 @@
-compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
-run = ["java", "-classpath", ".:target/dependency/*", "Main"]
+#compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
+run = ""
+#["java", "-classpath", ".:target/dependency/*", "Main"]
 
 entrypoint = "Main.java"
 hidden = ["**/*.class"]
-language = "java"
+language = "html"
 
-[packager]
-language = "java"
+
 
 [packager.features]
 packageSearch = true
@@ -23,11 +23,6 @@ language = "java1"
 [nix]
 channel = "stable-21_11"
 
-[debugger]
-support = true
-
-[debugger.compile]
-command = "javac -classpath .:/run_dir/junit-4.12.jar:target/dependency/* -g -d . $(find . -type f -name '*.java')"
 
 [debugger.interactive]
 transport = "localhost:0"
