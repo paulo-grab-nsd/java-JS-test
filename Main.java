@@ -8,10 +8,10 @@ class Main {
   public static void main(String[] args) throws Exception{
     ScriptEngineManager manager = new ScriptEngineManager();
     ScriptEngine engine = manager.getEngineByName("JavaScript");
-    engine.eval(Files.newBufferedReader(Paths.get("script.js"), StandardCharsets.UTF_8));
+    engine.eval(Files.newBufferedReader(Paths.get("testing.js"), StandardCharsets.UTF_8));
     Invocable inv = (Invocable) engine;
     // call function from script file
-    inv.invokeFunction("print", "NASKFNAJNFJSN");
+    //inv.invokeFunction("funky", "NASKFNAJNFJSN");
     /*
     Context context = Context.newBuilder("js").allowIO(true).build();
     //Source source = Source.newBuilder("js", "42", "mysource.js").build();
