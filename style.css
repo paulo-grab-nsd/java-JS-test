@@ -1,0 +1,28 @@
+body,html {font-size:10px;}
+
+#canvas {
+  height:600px; 
+  width:600px; 
+  background:url('topo.png') center;
+  position:absolute;  
+  background-position: left 0px top 0px;
+}
+
+#player{
+  position: absolute;
+  top:100px;
+  left:50px;
+  width:20px;
+  height:20px;
+  background:url("img/pinky/forward.png") center;
+  #background-size: 20px;
+}
+
+#roccs > *{
+  position: absolute;
+  background: grey;
+}
+#events > *{
+  position: absolute;
+  background: green;
+}
